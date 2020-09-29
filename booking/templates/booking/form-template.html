@@ -1,0 +1,11 @@
+{% for field in form %}
+	<div class="form-group flex-container">
+		<div class="error">
+			<span class="text-danger small">{{ field.errors }}</span>
+		</div>
+		<label class="form-control-label">{{ field.label_tag }}</label>
+		<div class="field-value">
+			{{ field }}
+		</div>
+	</div>
+{% endfor %}

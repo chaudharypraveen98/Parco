@@ -1,0 +1,24 @@
+{% extends "booking/base.html" %}
+{% block title %}Login{% endblock %}
+{% block album_active %}active{% endblock %}
+{% block body %}
+    <section class="breadcumb-area bg-img bg-overlay contact-bg" id="contact-bg1">
+        <div class="bradcumbContent">
+            <p>Login</p>
+            <h2>Welcome back, Admin</h2>
+        </div>
+    </section>
+	<div class="container-fluid" id="add-form">
+
+        <form enctype="multipart/form-data" method="post" class="form-control">
+            <div class="flex-container">
+                {% csrf_token %}
+                {% include 'booking/form-template.html' %}
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" value="Submit">Submit</button>
+                </div>
+            </div>
+        </form>
+	</div>
+
+{% endblock %}
