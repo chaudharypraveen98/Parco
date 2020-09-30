@@ -1,7 +1,7 @@
 ## SmartPark
 
 #### PWA for Parking Space using IOT
-<a href="https://chaudharypraveen98.pythonanywhere.com/">click here to open</a>
+<a href="https://chaudharypraveen98.pythonanywhere.com/">click here to open website</a>
 
 
 ![Basic Prototype](prototype.svg)
